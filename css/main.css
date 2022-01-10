@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.yka-topbar {
+  min-height: 60px;
+  padding: 10px;
+  background-color: #eee;
+}
+
+.yka-topbar .flex {
+  justify-content: space-between;
+}
+
+.logo-desktop {
+  display: flex;
+  align-items: center;
+}
+
+.logo-desktop img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+}
+
+.logo-desktop .logo-title{
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.yka-topbar .topbar-buttons > ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.yka-topbar .topbar-buttons > ul li a {
+  display: block;
+  padding: 5px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.yka-topbar .topbar-buttons > ul li a.btn-hindi {
+  color: #000;
+  padding: 6px 12px;
+  font-weight: 800;
+  border: 2px solid #d30000;
+}

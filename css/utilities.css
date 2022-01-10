@@ -1,0 +1,36 @@
+.list-unstyled {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar-brand {
+  display: inline-block;
+}
+
+.btn {
+  text-align: center;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid transparent;
+}
+
+/* MEDIA QUERIES */
+
+@media(min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
