@@ -20,6 +20,17 @@
   display: inline-block;
 }
 
+.navbar-toggler {
+  border: unset;
+  margin: unset;
+  padding: unset;
+  background-color: transparent;
+}
+
+.navbar-toggler:hover{
+  cursor: pointer;
+}
+
 .btn {
   text-align: center;
   border-radius: 8px;

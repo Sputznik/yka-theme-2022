@@ -18,12 +18,18 @@ class YKA_THEME{
     wp_enqueue_style('yka-core-style', YKA_THEME_URL.'/css/main.css', array('yka-core-utilities', 'font-awesome' ), time() );
 
 		//ENQUEUE SCRIPTS
-		wp_enqueue_script( 'yka-core-js', YKA_THEME_URL.'/js/main.js', array(), time(), true );
+		wp_enqueue_script( 'yka-core-js', YKA_THEME_URL.'/js/main.js', array('jquery'), time(), true );
 
 	}
 
   function afterSetupTheme(){
     remove_theme_support( 'widgets-block-editor' );
+
+		// Register Theme Menus
+		register_nav_menus( array(
+			'yka-sidebar-menu'    => __( 'Sidebar Menuuu', 'yka' )
+		));
+
   }
 
 }
