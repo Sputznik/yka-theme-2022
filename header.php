@@ -15,4 +15,4 @@
     </header>
 
     <!-- Content Section -->
-    <main>
+    <main class="main-content">

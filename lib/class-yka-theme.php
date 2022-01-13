@@ -27,7 +27,7 @@ class YKA_THEME{
 
 		// Register Theme Menus
 		register_nav_menus( array(
-			'yka-sidebar-menu'    => __( 'Sidebar Menuuu', 'yka' )
+			'yka-sidebar-menu'    => __( 'Sidebar Menu', 'yka' )
 		));
 
   }

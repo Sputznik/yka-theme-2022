@@ -41,5 +41,44 @@
     ) );
   ?>
   <!-- SIDEBAR MENU -->
+</div>
+<?php
+
+  $menu_item_image = YKA_THEME_URL.'/images';
+
+?>
+
+<!-- PRIMARY MENU -->
+<div class="primary-menu-wrapper">
+  <div class="container">
+    <ul class="list-unstyled primary-nav">
+      <li>
+        <a href="#">
+          <img src="<?php _e( $menu_item_image.'/home-feed.png' );?>" alt="Home Feed">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="<?php _e( $menu_item_image.'/quick-bytes.png' );?>" alt="Quick Bytes">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="<?php _e( $menu_item_image.'/yka-blogs.png' );?>" alt="Yka Blogs">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="<?php _e( $menu_item_image.'/yka-action-network.png' );?>" alt="Yka Action Network">
+        </a>
+      </li>
+      <li class="start-writing">
+        <a href="#">
+          <img src="<?php _e( $menu_item_image.'/start-writing.png' );?>" alt="Start Writing">
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- PRIMARY MENU -->
 
 </div>
