@@ -99,8 +99,12 @@ img {
 
 /* MEDIA QUERIES */
 
-@media( max-width: 768px ){
-  .yka-topbar .topbar-buttons > ul .li-btn-hindi{
+@media(max-width:768px){
+  .logo-desktop .logo-title{ margin-left: 12px; font-size: 18px; }
+  .yka-topbar .topbar-buttons > ul li a{
+    margin: 0 8px;
+  }
+  .yka-topbar .topbar-buttons > ul .li-search-item{
     display: none;
   }
 
