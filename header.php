@@ -11,7 +11,7 @@
   <div id="site">
     <header>
       <!-- Navigation Bar -->
-      <?php get_template_part( 'template-parts/topbar' ); ?>
+      <?php get_template_part( 'partials/topbar' ); ?>
     </header>
 
     <!-- Content Section -->

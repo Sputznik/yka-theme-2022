@@ -100,10 +100,10 @@ img {
 
 /* PRIMARY MENU */
 .primary-menu-wrapper{
+  height: 80px;
   background-color: #181818;
 }
 .primary-nav{
-  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -170,20 +170,11 @@ img {
   /* PRIMARY NAVBAR */
   .primary-menu-wrapper{
     width: 100%;
+    height: 52px;
     position: fixed;
     bottom: 0;
     z-index: 100;
   }
-
-  .primary-nav{
-    display: flex;
-    width: 100%;
-    height: 52px;
-  }
-
-  /* .primary-nav img{
-    max-width: 80%;
-  } */
 
   .primary-nav li a{
     height: 52px;

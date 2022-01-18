@@ -29,18 +29,22 @@
   <!-- TOP BAR -->
 
   <!-- SIDEBAR MENU -->
-  <?php
-    wp_nav_menu( array(
-      'menu'              => 'yka-sidebar-menu',
-      'theme_location'    => 'yka-sidebar-menu',
-      'depth'             => 2,
-      'container'         => 'div',
-      'container_class'   => 'container yka-sidebar-collapse',
-      'container_id'      => '',
-      'menu_class'        => 'list-unstyled sidebar-nav',
-    ) );
-  ?>
+  <div class="yka-sidebar-collapse">
+    <?php
+      wp_nav_menu( array(
+        'menu'              => 'yka-sidebar-menu',
+        'theme_location'    => 'yka-sidebar-menu',
+        'depth'             => 2,
+        'container'         => 'div',
+        'container_class'   => 'container',
+        'container_id'      => '',
+        'menu_class'        => 'list-unstyled sidebar-nav',
+        'fallback_cb'       => false
+      ) );
+    ?>
+  </div>
   <!-- SIDEBAR MENU -->
+
 </div>
 
 <!-- PRIMARY MENU -->
@@ -54,6 +58,7 @@
       'container_class'   => 'container',
       'container_id'      => '',
       'menu_class'        => 'list-unstyled primary-nav',
+      'fallback_cb'       => false
     ) );
   ?>
 </div>
