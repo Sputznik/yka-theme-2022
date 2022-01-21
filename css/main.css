@@ -58,6 +58,11 @@ body {
   border: 2px solid #d30000;
 }
 
+.yka-topbar .topbar-buttons .li-search-item > a{
+  color: #000;
+  font-size: 25px;
+}
+
 /* SIDEBAR MENU */
 .yka-sidebar-collapse {
   position: absolute;

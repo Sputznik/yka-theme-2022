@@ -15,7 +15,7 @@
             <a href="#" class="btn btn-hindi">हिन्दी</a>
           </li>
           <li class="li-search-item">
-            <a href="<?php _e( get_bloginfo('url').'/?s='  );?>" style="font-size: 25px;color: #000;"><i class="fa fa-search"></i></a>
+            <a href="#"><i class="fa fa-search"></i></a>
           </li>
           <li>
             <button class="navbar-toggler" type="button" style="font-size: 25px;color: #d30000;">
