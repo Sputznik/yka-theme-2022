@@ -14,6 +14,7 @@ class YKA_THEME{
 
 		//ENQUEUE STYLES
 		wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', false, null );
+		wp_enqueue_style( 'yka-google-fonts', 	'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap', false, null );
 		wp_enqueue_style('yka-core-utilities', YKA_THEME_URL.'/css/utilities.css', array(), time() );
     wp_enqueue_style('yka-core-style', YKA_THEME_URL.'/css/main.css', array('yka-core-utilities', 'font-awesome' ), time() );
 
@@ -24,6 +25,7 @@ class YKA_THEME{
 
   function afterSetupTheme(){
     remove_theme_support( 'widgets-block-editor' );
+		add_theme_support( 'post-thumbnails' );
 
 		// Register Theme Menus
 		register_nav_menus( array(

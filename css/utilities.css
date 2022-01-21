@@ -1,5 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+img {
+  border: 0
+}
+
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid #eee;
+}
+
+blockquote ol:last-child,
+blockquote p:last-child,
+blockquote ul:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  outline: 0
+}
+
+button{
+  margin: 0;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+  font-family: inherit;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.58;
+  margin: 20px 0 10px 0;
+}
+
+h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 36px
+}
+
+h2 {
+  font-size: 30px
+}
+
+h3 {
+  font-size: 24px
+}
+
+h4 {
+  font-size: 18px
+}
+
+h5 {
+  font-size: 14px
+}
+
+h6 {
+  font-size: 12px
+}
+
+p {
+  margin: 0 0 10px
+}
+
 .list-unstyled {
   list-style: none;
+  padding-left: 0;
 }
 
 .flex {
@@ -10,6 +110,7 @@
 }
 
 .container {
+  max-width: 1000px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -27,7 +128,7 @@
   background-color: transparent;
 }
 
-.navbar-toggler:hover{
+.navbar-toggler:hover {
   cursor: pointer;
 }
 
@@ -36,12 +137,4 @@
   border-radius: 8px;
   outline: none;
   border: 1px solid transparent;
-}
-
-/* MEDIA QUERIES */
-
-@media(min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
 }
