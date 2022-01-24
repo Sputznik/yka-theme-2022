@@ -22,11 +22,26 @@ class YKA_UTIL extends YKA_BASE{
 
     return $num;
   }
-  
+
   function count_user_posts( $userid ) {
     global $wpdb;
     $query = "SELECT COUNT(*) FROM $wpdb->posts WHERE post_author = $userid AND post_status = 'publish'";
     return $wpdb->get_var($query);
+  }
+
+  function maxPostPublishedUsers( $users_count ){
+    global $wpdb;
+    $prefix = $wpdb->prefix;
+    $authors = $wpdb->get_results("
+    SELECT
+        {$prefix}users.ID, {$prefix}users.display_name as name, COUNT(*) as posts_count FROM
+        {$prefix}posts, {$prefix}users WHERE
+        {$prefix}posts.post_status='publish' AND {$prefix}posts.post_author = {$prefix}users.ID
+        GROUP BY post_author ORDER BY posts_count DESC LIMIT $users_count
+    ");
+
+    return $authors;
+
   }
 
 }

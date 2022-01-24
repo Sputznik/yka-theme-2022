@@ -18,6 +18,17 @@
       <div class="author-box-below-post">
         <?php get_template_part('partials/author-box'); ?>
       </div>
+      <div class="users-list">
+        <div class="users-list-title">
+          <div>
+            #Meri<strong>Awaaz</strong>
+          </div>
+          <div>
+            YKA members with the most stories
+          </div>
+        </div>
+        <?php echo do_shortcode("[yka_max_post_published_users]");?>
+      </div>
     </div>
   </div>
 <?php endwhile;endif;?>

@@ -347,6 +347,57 @@ body {
   background-color: #25d366;
 }
 
+
+/* USERS LIST SHORTCODE */
+.single-post-wrapper .users-list-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.yka-max-post-published-users {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  margin: 5px 0 20px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 2px solid #888888;
+}
+.yka-max-post-published-users > li {
+  position: relative;
+  text-align: center;
+  padding: 0 5px;
+}
+
+.yka-max-post-published-users > li > a {
+  display: block;
+  color: #000000;
+}
+
+.yka-max-post-published-users .avatar {
+  border-radius: 100px;
+  max-width: 95px;
+}
+.yka-max-post-published-users .posts-count{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: -22px;
+  width: 55px;
+  color: #ffffff;
+  background-color: #d92d33;
+  text-align: center;
+  padding: 5px 14px;
+  border-radius: 20px;
+  user-select: none;
+}
+/* USERS LIST SHORTCODE */
+
 /* SINGLE POST */
 
 /* MEDIA QUERIES */
