@@ -82,6 +82,26 @@ class YKA_THEME{
 		return '<img src="' . $user_avatar . '" class="avatar avatar-wordpress-social-login avatar-' . $size . ' photo" height="' . $size . '" width="' . $size . '" />';
 	}
 
+	// CACHING POST CATEGORIES BY POST ID AND ALSO RETRIEVING
+	function getPostCategories( $post_id ){
+
+		return $this->cache->getData( 'post_categories', $post_id, function( $post_id ){
+
+			$cats = get_the_category($post_id);
+
+			// REMOVE UNLISTED AND UNREVIEWED CATEGORIES FROM THE LIST
+			$hide = array('unlisted', 'unreviewed');
+			foreach (	$cats as $i=>$cat	)	{
+				if( in_array( $cat->slug, $hide ) ){
+					unset( $cats[$i] );
+				}
+			}
+			return $cats;
+
+		});
+
+	}
+
 }
 
 global $yka_theme;

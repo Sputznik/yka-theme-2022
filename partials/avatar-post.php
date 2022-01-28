@@ -1,9 +1,11 @@
 <?php
-	$author_id		= get_the_author_meta( 'ID' );
-	$author_link 	= esc_url( get_author_posts_url( $author_id ) );
+	global $yka_theme;
 
-	$categories = get_the_category();
-	$separator = ', ';
+	$author_id	= get_the_author_meta( 'ID' );
+	$author     = $yka_theme->getUser( $author_id );
+
+	$categories = $yka_theme->getPostCategories( $post->ID );
+	$separator 	= ', ';
 	$categories_str = '';
 
 	if ( ! empty( $categories ) ) {
@@ -16,8 +18,8 @@
 
 <div class="author-snippet">
 	<div class="author-details">
-		<a class="author-name" href="<?php _e( $author_link );?>">
-			<?php _e( get_the_author() );?>
+		<a class="author-name" href="<?php _e( $author->link );?>">
+			<?php _e( $author->display_name );?>
 		</a>
 		<div class="post-categories"><?php _e( $categories_str );?></div>
 	</div>
